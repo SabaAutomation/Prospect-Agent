@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Run tests", "type": "shell", "command": "pytest -q", "group": "test", "problemMatcher": [] },
+    { "label": "Demo run (offline)", "type": "shell", "command": "python -m app.cli run --demo", "problemMatcher": [] },
+    { "label": "Open dashboard", "type": "shell", "command": "python -m app.cli serve", "isBackground": true, "problemMatcher": [] },
+    { "label": "Doctor (check Ollama)", "type": "shell", "command": "python -m app.cli doctor", "problemMatcher": [] }
+  ]
+}
