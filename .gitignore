@@ -5,3 +5,4 @@ __pycache__/
 data/*.db
 .pytest_cache/
 data/my_leads.csv
+data/my_leads.csv
