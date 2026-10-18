@@ -8,6 +8,16 @@ Finder -> Auditor -> Scorer -> Writer        Supervisor handles retries, rate li
 (OSM/CSV) (real checks) (rules)  (Ollama + validation + template fallback)        Dashboard: review, edit, approve
 ```
 
+## How I came up with this
+
+![Hand-sketched board showing how Prospect Agent went from idea to a working agent team](docs/ideation.png)
+
+I started from three earlier projects (a harness lab, an automation project and a multi-document RAG brain) and looked for a
+fourth that shows different skills: tool use, multi-agent hand-offs, and a human approval step. I dropped a document-processing idea
+because it overlapped my RAG project, and chose a lead-research agent team that also helps me find freelance clients.
+Before writing code I set the rules: facts come from code and not the model, a human approves everything, crawling is polite,
+and a template takes over if the model fails.
+
 ## 1. Setup (VS Code terminal)
 
 Windows PowerShell:
